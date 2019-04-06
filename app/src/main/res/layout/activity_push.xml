@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="top|center">
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:gravity="top|center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="10sp">
+
+        <RadioButton
+            android:id="@+id/rad_bart"
+            android:text="Bart"
+            android:layout_width="wrap_content"
+            android:onClick="radioClick"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rad_ralph"
+            android:text="Ralph"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:onClick="radioClick"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rad_milhouse"
+            android:text="Milhouse"
+            android:layout_width="wrap_content"
+            android:onClick="radioClick"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rad_lisa"
+            android:text="Lisa"
+            android:layout_width="wrap_content"
+            android:onClick="radioClick"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20sp"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:id="@+id/edtxt_courseID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="Course ID"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/edtxt_courseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="Course Name"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/edtxt_grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="Grade"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/push_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="PUSH"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

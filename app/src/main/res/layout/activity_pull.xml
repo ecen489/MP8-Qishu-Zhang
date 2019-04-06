@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".PullActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/testView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/studentID_editTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:hint="Student ID"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/query1_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Query 1"
+            android:onClick="clickQuery1"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/query2_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Query 2"
+            android:onClick="clickQuery2"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/push_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Push"
+            android:onClick="pushClick"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:onClick="homeClick"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="35dp"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

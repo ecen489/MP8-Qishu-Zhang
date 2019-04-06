@@ -99,8 +99,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void userLogin(){
-        final String email = emailText.getText().toString();
-        final String password = passwordText.getText().toString();
+        final String email = emailText.getText().toString().trim();
+        final String password = passwordText.getText().toString().trim();
 
         if(email.isEmpty()){
             emailText.setError("Email is required");
